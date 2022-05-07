@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.aryanwalia.actobase.ui.auth.AuthViewModel" />
+
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_back_three"
+        tools:context=".ui.auth.SignUpActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mid_layout"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/user_add_back"
+                android:src="@drawable/user_add" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/app_mid_layout_back"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/fields_back"
+                android:drawableLeft="@drawable/ic_name"
+                android:fontFamily="@font/montserrat"
+                android:hint="  enter username"
+                android:padding="15dp"
+                android:text="@={viewmodel.user_name}" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/user_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/fields_back"
+                android:drawableLeft="@drawable/ic_email"
+                android:fontFamily="@font/montserrat"
+                android:hint="  enter mail"
+                android:padding="15dp"
+                android:text="@={viewmodel.email}" />
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/user_email"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/fields_back"
+                android:drawableLeft="@drawable/ic_lock"
+                android:fontFamily="@font/montserrat"
+                android:hint="  enter password"
+                android:padding="15dp"
+                android:text="@={viewmodel.password}" />
+
+            <EditText
+
+                android:id="@+id/user_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/user_pass"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/fields_back"
+                android:drawableLeft="@drawable/ic_lock"
+                android:fontFamily="@font/montserrat"
+                android:hint="  confirm password"
+                android:padding="15dp"
+                android:text="@={viewmodel.final_password}" />
+
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_confirm_pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/transparent"
+                android:onClick="@{viewmodel.onSignUpButtonClicked}"
+                android:text="Sign Up" />
+
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mid_layout"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</layout>

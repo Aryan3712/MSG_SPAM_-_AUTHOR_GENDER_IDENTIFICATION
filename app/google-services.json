@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463923826772",
+    "project_id": "smartext-69d3c",
+    "storage_bucket": "smartext-69d3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463923826772:android:5478a35e42c14557211dc1",
+        "android_client_info": {
+          "package_name": "com.aryanwalia.actobase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463923826772-5hu4ivce4kc6cvqime1u2lke8qf8oklc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBz4YhmxVroXLPqBYAzJIqVo0-ZVynY3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463923826772-5hu4ivce4kc6cvqime1u2lke8qf8oklc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="wrap_content"
+        android:background="@drawable/app_mid_layout_back_new"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/status_val"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="STATUS"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/gender_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENDER"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@id/status_val"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/received_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a receive message"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
